@@ -8,5 +8,5 @@ dependencies[] = features
 dependencies[] = filter
 dependencies[] = media
 features[features_api][] = api:2
-features[filter][] = osu_text_format_wysiwyg
-features[user_permission][] = use text format osu_text_format_wysiwyg
+features[filter][] = osu_wysiwyg_text_format
+features[user_permission][] = use text format osu_wysiwyg_text_format
