@@ -10,7 +10,7 @@
 function osu_text_format_filter_default_formats() {
   $formats = array();
 
-  // Exported format: WYSIWYG CKEDITOR.
+  // Exported format: CKEDITOR WYSIWYG.
   $formats['osu_wysiwyg_text_format'] = array(
     'format' => 'osu_wysiwyg_text_format',
     'name' => 'CKEDITOR WYSIWYG',
@@ -23,7 +23,6 @@ function osu_text_format_filter_default_formats() {
         'status' => 1,
         'settings' => array(
           'valid_elements' => 'a[accesskey|charset|class|coords|dir<ltr?rtl|href|hreflang|id|lang|name|rel|rev|shape<circle?default?poly?rect|style|tabindex|title|target|type],
-area[href|title|alt|shape|coords],
 abbr[class|dir<ltr?rtl|id|lang|style|title],
 acronym[class|dir<ltr?rtl|id|id|lang|style|title],
 address[class|align|dir<ltr?rtl|id|lang|style|title],
@@ -72,7 +71,6 @@ kbd[class|dir<ltr?rtl|id|lang|style|title],
 keygen[autofocus|challenge|class|dir<ltr?rtl|disabled<disabled|form|id|keytype|lang|style|title],
 legend[align<bottom?left?right?top|accesskey|class|dir<ltr?rtl|id|lang|style|title],
 li[class|dir<ltr?rtl|id|lang|style|title|type|value],
-map[name|id|title],
 mark[class|dir<ltr?rtl|id|lang|style|title],
 menu[class|compact<compact|dir<ltr?rtl|id|label|lang|style|title|type],
 meter[class|dir<ltr?rtl|high|id|lang|low|max|min|optimum|style|title|value],
@@ -361,4 +359,3 @@ wbr[class|dir<ltr?rtl|id|lang|style|title]',
 
   return $formats;
 }
-
