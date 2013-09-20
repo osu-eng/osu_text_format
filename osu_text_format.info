@@ -7,6 +7,7 @@ project = osu_text_format
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = media
+dependencies[] = wysiwyg_filter
 features[features_api][] = api:2
 features[filter][] = osu_wysiwyg_text_format
 features[user_permission][] = use text format osu_wysiwyg_text_format
