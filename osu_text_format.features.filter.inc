@@ -14,7 +14,7 @@ function osu_text_format_filter_default_formats() {
   $formats['osu_wysiwyg_text_format'] = array(
     'format' => 'osu_wysiwyg_text_format',
     'name' => 'CKEDITOR WYSIWYG',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
     'weight' => -10,
     'filters' => array(
@@ -353,6 +353,19 @@ wbr[class|dir<ltr?rtl|id|lang|style|title]',
         'settings' => array(
           'filter_url_length' => 72,
         ),
+      ),
+      'spamspan' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'spamspan_at' => ' [at] ',
+          'spamspan_use_graphic' => 0,
+        ),
+      ),
+      'filter_tokens' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
       ),
     ),
   );
